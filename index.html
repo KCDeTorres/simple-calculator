@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #457b9d;
+        }
+
+        table{
+            border: 10px solid #1D3557;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #E63946;
+            border-radius: 10px;
+        }
+
+        input[type="text"]{
+            padding: 20px 60px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 5px solid #1D3557;
+            border-radius: 10px;
+        }
+
+        input[type="button"]{
+            width: 100%;
+            padding: 20px 30px;
+            background-color: #457b9d;
+            color: #F1FAEE;
+            font-size: 20px;
+            font-weight: bold;
+            border: 3px solid #1D3557;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            input[type="text"] {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            input[type="button"] {
+                padding: 15px 20px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <tr> <!--ROWAN-->
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td><input type="button" value="C"></td>
+        </tr>
+
+        <tr> <!--ROTU-->
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+            <td><input type="button" value="/"></td>
+        </tr>
+
+        <tr> <!--ROTRI-->
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="x"></td>
+        </tr>
+
+        <tr> <!--ROPOR-->
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="-"></td>
+        </tr>
+
+        <tr> <!--ROPAYB-->
+            <td><input type="button" value="."></td>
+            <td><input type="button" value="0"></td>
+            <td><input type="button" value="="></td>
+            <td><input type="button" value="+"></td>
+        </tr>
+    </table>
+</body>
+</html>
